@@ -29,7 +29,7 @@ abstract class AbstractCommand extends Command
      *
      * @throws InvalidArgumentException
      */
-    protected function execute(InputInterface $input, OutputInterface $output)
+    protected function execute(InputInterface $input, OutputInterface $output) : int
     {
         $config    = $this->createConfig($input);
         $processor = $this->createProcessor($input, $output);
